@@ -1,0 +1,195 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8094353834949067956
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -2964838444225291737, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnValidateCooldown>k__BackingField.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -2964838444225291737, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnValidateCooldown>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: -2964838444225291737, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnValidateCooldown>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: -2964838444225291737, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnValidateCooldown>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: -2964838444225291737, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnValidateCooldown>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: PlayOneFrame
+      objectReference: {fileID: 0}
+    - target: {fileID: -2964838444225291737, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnValidateCooldown>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MedievalHero.Characters.Animations.CharacterActionsAnimation, Characters
+      objectReference: {fileID: 0}
+    - target: {fileID: 298481610297877881, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnAfterDelay>k__BackingField.m_PersistentCalls.m_Calls.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 298481610297877881, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnAfterDuration>k__BackingField.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 298481610297877881, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnAfterDelay>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 298481610297877881, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnAfterDelay>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 298481610297877881, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnAfterDuration>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 298481610297877881, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnAfterDelay>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 298481610297877881, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnAfterDuration>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 298481610297877881, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnAfterDelay>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_MethodName
+      value: EnableHitBoxes
+      objectReference: {fileID: 0}
+    - target: {fileID: 298481610297877881, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnAfterDuration>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 298481610297877881, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnAfterDuration>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: DisableHitBoxes
+      objectReference: {fileID: 0}
+    - target: {fileID: 298481610297877881, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnAfterDelay>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
+      value: MedievalHero.Characters.Actions.Colliders.HitBoxesController, Characters
+      objectReference: {fileID: 0}
+    - target: {fileID: 298481610297877881, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnAfterDuration>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MedievalHero.Characters.Actions.Colliders.HitBoxesController, Characters
+      objectReference: {fileID: 0}
+    - target: {fileID: 298481610297877881, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnAfterDelay>k__BackingField.m_PersistentCalls.m_Calls.Array.data[1].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 298481610297877881, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnAfterDuration>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 454705427383948824, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: m_Name
+      value: BasicAttack
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977981380080888656, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977981380080888656, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977981380080888656, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977981380080888656, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977981380080888656, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977981380080888656, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977981380080888656, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977981380080888656, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977981380080888656, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977981380080888656, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2977981380080888656, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405995172648602409, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnMove>k__BackingField.m_PersistentCalls.m_Calls.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405995172648602409, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnMove>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405995172648602409, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnMove>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405995172648602409, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnMove>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405995172648602409, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnMove>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveHitBoxes
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405995172648602409, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnMove>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MedievalHero.Characters.Actions.Colliders.HitBoxesController, Characters
+      objectReference: {fileID: 0}
+    - target: {fileID: 5405995172648602409, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnMove>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    - target: {fileID: 5440982286906111837, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnMove>k__BackingField.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5440982286906111837, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnMove>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5440982286906111837, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnMove>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 5440982286906111837, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnMove>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 5440982286906111837, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnMove>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: MoveHitBoxes
+      objectReference: {fileID: 0}
+    - target: {fileID: 5440982286906111837, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnMove>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: MedievalHero.Characters.Actions.Colliders.HitBoxesController, Characters
+      objectReference: {fileID: 0}
+    - target: {fileID: 5440982286906111837, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}
+      propertyPath: <OnMove>k__BackingField.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 42d18d8af0f0abf40847a4ee96fd4320, type: 3}

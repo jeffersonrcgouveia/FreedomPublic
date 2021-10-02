@@ -1,0 +1,16 @@
+{
+    "name": "ScriptableEventsExtensions",
+    "rootNamespace": "",
+    "references": [
+        "GUID:9488bd97a4563f14e9cddebcbecc3b28"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
