@@ -1,0 +1,3 @@
+[submodule "Assets/Projects/ScriptableEvents"]
+	path = Assets/Projects/ScriptableEvents
+	url = https://github.com/jeffersonrcgouveia/ScriptableEvents.git
