@@ -5,6 +5,9 @@ After you get defeated, if you make a record of waves passed or enemies killed, 
 
 > :warning: **Paid Assets**: The paid assets like character animations, environment textures and the Barbarian axe were removed from this repository. The materials with paid textures were replaced by simple materials.
 
+## Gameplay Video
+https://www.youtube.com/watch?v=0zind_KFq2c
+
 ## Online Playable Version
 https://simmer.io/@jgouveia/freedom
 
