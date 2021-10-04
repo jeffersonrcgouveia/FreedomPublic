@@ -5,7 +5,7 @@ namespace Freedom.Characters.Actions.Base
 {
     public class CharacterAction : MonoBehaviour
     {
-        public Action OnHandleAction { get; set; }
+        public event Action OnHandleAction;
 
         public bool CanAct { get; set; } = true;
 

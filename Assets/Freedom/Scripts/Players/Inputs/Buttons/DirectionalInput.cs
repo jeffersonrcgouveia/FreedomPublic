@@ -8,7 +8,7 @@ namespace Freedom.Players.Inputs.Buttons
 		[SerializeField] string horizontalAxisName = "Horizontal";
 		[SerializeField] string verticalAxisName = "Vertical";
 
-		public Action<float, float> OnDirectionalAxis { get; set; }
+		public event Action<float, float> OnDirectionalAxis;
 
 		void Update()
 		{

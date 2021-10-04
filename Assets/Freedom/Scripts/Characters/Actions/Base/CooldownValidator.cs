@@ -7,14 +7,14 @@ namespace Freedom.Characters.Actions.Base
     {
         [SerializeField] float cooldown;
 
-        public Action OnValidateCooldown { get; set; }
+        public event Action OnValidateCooldown;
 
         float _timeStamp;
 
         public void ValidateCooldown()
         {
             if (_timeStamp > Time.time) return;
-            OnValidateCooldown.Invoke();
+            OnValidateCooldown?.Invoke();
             StartCooldownTimer();
         }
 

@@ -10,9 +10,9 @@ namespace Freedom.Scenes.Game.SpawnManagers.Enemies.SpawnManager
     {
         [SerializeField] EnemySpawnManager spawnManager;
 
-        public Action OnEnemyKilled { get; set; }
+        public event Action OnEnemyKilled;
 
-        public Action OnWaveEnemiesKilled { get; set; }
+        public event Action OnWaveEnemiesKilled;
 
         readonly List<GameObject> _killedEnemies = new List<GameObject>();
 

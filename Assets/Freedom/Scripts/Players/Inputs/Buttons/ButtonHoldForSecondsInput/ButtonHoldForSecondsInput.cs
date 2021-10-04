@@ -10,11 +10,11 @@ namespace Freedom.Players.Inputs.Buttons.ButtonHoldForSecondsInput
 
 		[SerializeField] float holdSeconds = 0.18f;
 
-		public Action OnButtonHold { get; set; }
+		public event Action OnButtonHold;
 
-		public Action OnButtonHeldUp { get; set; }
+		public event Action OnButtonHeldUp;
 
-		public Action OnButtonUp { get; set; }
+		public event Action OnButtonUp;
 
 		HoldInputButton _holdInputButton;
 

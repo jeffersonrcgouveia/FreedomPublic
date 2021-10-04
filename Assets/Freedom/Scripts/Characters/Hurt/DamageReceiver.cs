@@ -8,7 +8,7 @@ namespace Freedom.Characters.Hurt
 	{
 		[SerializeField] CharacterHealth characterHealth;
 
-		public Action<int> OnReceiveDamage { get; set; }
+		public event Action<int> OnReceiveDamage;
 
 		public void ReceiveDamage(int damage)
 		{

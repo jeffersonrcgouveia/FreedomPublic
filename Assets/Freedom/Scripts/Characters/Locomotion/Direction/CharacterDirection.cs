@@ -5,9 +5,9 @@ namespace Freedom.Characters.Locomotion.Direction
 {
     public class CharacterDirection : MonoBehaviour
     {
-        [field: SerializeField, Space] public Action<Vector3> OnUpdateMovingDirection { get; set; }
+        public event Action<Vector3> OnUpdateMovingDirection;
 
-        [field: SerializeField, Space] public Action<Vector3> OnFixedUpdateMovingDirection { get; set; }
+        public event Action<Vector3> OnFixedUpdateMovingDirection;
 
         public Vector3 MovingDirection { get; private set; }
 
@@ -18,13 +18,13 @@ namespace Freedom.Characters.Locomotion.Direction
         void Update()
         {
             if (!CanExecute) return;
-            OnUpdateMovingDirection.Invoke(MovingDirection);
+            OnUpdateMovingDirection?.Invoke(MovingDirection);
         }
 
         void FixedUpdate()
         {
             if (!CanExecute) return;
-            OnFixedUpdateMovingDirection.Invoke(MovingDirection);
+            OnFixedUpdateMovingDirection?.Invoke(MovingDirection);
         }
 
         public void CalculateMovingDirection(float horizontal, float vertical)

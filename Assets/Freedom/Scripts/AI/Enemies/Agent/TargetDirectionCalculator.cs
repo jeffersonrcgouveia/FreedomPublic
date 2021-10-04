@@ -5,7 +5,7 @@ namespace Freedom.AI.Enemies.Agent
 {
 	public class TargetDirectionCalculator : MonoBehaviour
 	{
-		[field: SerializeField, Space] public Action<Vector3> OnCalculateTargetDirection { get; set; }
+		public event Action<Vector3> OnCalculateTargetDirection;
 
 		public void Calculate(Transform target)
 		{

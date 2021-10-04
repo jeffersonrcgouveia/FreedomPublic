@@ -12,7 +12,7 @@ namespace Freedom.Scenes.Game.SpawnManagers.Enemies.Waves
     {
         [SerializeField] SceneReference waveScene;
 
-        public Action<EnemyWaveScriptableVariable> OnLoadEnemyWave { get; set; }
+        public event Action<EnemyWaveScriptableVariable> OnLoadEnemyWave;
 
         EnemyWaveStateManager _stateManager;
 
@@ -30,7 +30,7 @@ namespace Freedom.Scenes.Game.SpawnManagers.Enemies.Waves
             SceneManager.LoadScene(waveScene, LoadSceneMode.Additive);
             yield return new WaitForSeconds(5);
             SceneManager.UnloadSceneAsync(waveScene);
-            OnLoadEnemyWave.Invoke(state);
+            OnLoadEnemyWave?.Invoke(state);
         }
     }
 }

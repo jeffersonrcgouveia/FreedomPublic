@@ -11,7 +11,7 @@ namespace Freedom.Scenes.CharacterSelection.Attributes
 	{
 		[SerializeField] CharacterAttributesDatabase database;
 
-		[field: SerializeField] public Action<CharacterAttributesData> OnLoadData { get; set; }
+		public event Action<CharacterAttributesData> OnLoadData;
 
 		[SerializeField] CharacterSelector characterSelector;
 

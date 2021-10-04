@@ -20,9 +20,9 @@ namespace Freedom.Scenes.Game.SpawnManagers.Enemies.SpawnManager
 
         [SerializeField] Transform[] spawnPoints;
 
-        public Action<GameObject> OnSpawnPlayer { get; set; }
+        public event Action<GameObject> OnSpawnPlayer;
 
-        public Action<GameObject> OnSpawnCharacter { get; set; }
+        public event Action<GameObject> OnSpawnCharacter;
 
         ObstaclesChecker _obstaclesChecker;
 

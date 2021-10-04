@@ -10,7 +10,7 @@ namespace Freedom.Characters.Locomotion.Movement
         [SerializeField] CharacterDirection characterDirection;
         [SerializeField] CharacterGait characterGait;
 
-        public Action<Vector3> OnCalculateVelocity { get; set; }
+        public event Action<Vector3> OnCalculateVelocity;
 
         float _currentSpeed;
 

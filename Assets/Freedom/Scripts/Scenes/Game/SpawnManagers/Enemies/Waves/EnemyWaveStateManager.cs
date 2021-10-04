@@ -11,7 +11,7 @@ namespace Freedom.Scenes.Game.SpawnManagers.Enemies.Waves
 
         [SerializeField] EnemyWaveScriptableVariable waveState;
 
-        public Action<EnemyWaveScriptableVariable> OnSetWave { get; set; }
+        public event Action<EnemyWaveScriptableVariable> OnSetWave;
 
         void Awake() => SetWaveNumber(0);
 

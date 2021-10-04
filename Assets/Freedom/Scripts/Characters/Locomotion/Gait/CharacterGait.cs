@@ -12,11 +12,11 @@ namespace Freedom.Characters.Locomotion.Gait
 		[field:SerializeField] public float RunningSpeed { get; private set; }
 		[field:SerializeField] public float SprintingSpeed { get; private set; }
 
-		[field: SerializeField, Space] public Action<bool> OnSetWalking { get; set; }
-		[field: SerializeField] public Action<bool> OnSetSprinting { get; set; }
-		[field: SerializeField] public Action OnSprinting { get; set; }
-		[field: SerializeField] public Action OnNotSprinting { get; set; }
-		[field: SerializeField] public Action<float> OnCalculateGaitSpeed { get; set; }
+		public event Action<bool> OnSetWalking;
+		public event Action<bool> OnSetSprinting;
+		public event Action OnSprinting;
+		public event Action OnNotSprinting;
+		public event Action<float> OnCalculateGaitSpeed;
 
 		public bool CanSprint { get; set; } = true;
 
@@ -27,9 +27,9 @@ namespace Freedom.Characters.Locomotion.Gait
 			get => _isWalking;
 			set
 			{
-				OnSetSprinting.Invoke(_isSprinting = false);
-				OnSetWalking.Invoke(_isWalking = value);
-				OnCalculateGaitSpeed.Invoke(GetCurrentSpeed());
+				OnSetSprinting?.Invoke(_isSprinting = false);
+				OnSetWalking?.Invoke(_isWalking = value);
+				OnCalculateGaitSpeed?.Invoke(GetCurrentSpeed());
 			}
 		}
 
@@ -39,9 +39,9 @@ namespace Freedom.Characters.Locomotion.Gait
 			set
 			{
 				if (!CanSprint && value) return;
-				OnSetWalking.Invoke(_isWalking = false);
-				OnSetSprinting.Invoke(_isSprinting = value && characterDirection.IsMoving());
-				OnCalculateGaitSpeed.Invoke(GetCurrentSpeed());
+				OnSetWalking?.Invoke(_isWalking = false);
+				OnSetSprinting?.Invoke(_isSprinting = value && characterDirection.IsMoving());
+				OnCalculateGaitSpeed?.Invoke(GetCurrentSpeed());
 			}
 		}
 
@@ -49,11 +49,11 @@ namespace Freedom.Characters.Locomotion.Gait
 
 		bool _isSprinting;
 
-		void Start() => OnCalculateGaitSpeed.Invoke(GetCurrentSpeed());
+		void Start() => OnCalculateGaitSpeed?.Invoke(GetCurrentSpeed());
 
 		void FixedUpdate()
 		{
-			if (CanInvokeSprintingEvents) (_isSprinting ? OnSprinting : OnNotSprinting).Invoke();
+			if (CanInvokeSprintingEvents) (_isSprinting ? OnSprinting : OnNotSprinting)?.Invoke();
 		}
 
 		public void ToggleIsWalking() => IsWalking = !IsWalking;
@@ -62,9 +62,9 @@ namespace Freedom.Characters.Locomotion.Gait
 
 		public void InvokeEvents()
 		{
-			OnSetWalking.Invoke(_isWalking);
-			OnSetSprinting.Invoke(_isSprinting = _isSprinting && characterDirection.IsMoving());
-			OnCalculateGaitSpeed.Invoke(GetCurrentSpeed());
+			OnSetWalking?.Invoke(_isWalking);
+			OnSetSprinting?.Invoke(_isSprinting = _isSprinting && characterDirection.IsMoving());
+			OnCalculateGaitSpeed?.Invoke(GetCurrentSpeed());
 		}
 
 		public void StopSprinting()

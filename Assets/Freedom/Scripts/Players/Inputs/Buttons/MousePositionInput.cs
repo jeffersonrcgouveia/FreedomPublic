@@ -5,7 +5,7 @@ namespace Freedom.Players.Inputs.Buttons
 {
 	public class MousePositionInput : MonoBehaviour
 	{
-		[field: SerializeField, Space] public Action<Vector3> OnPositionMouse { get; set; }
+		public event Action<Vector3> OnPositionMouse;
 
 		void Update()
 		{

@@ -8,7 +8,7 @@ namespace Freedom.Scenes.Record
 	{
 		[SerializeField] CharacterRecordDatabase database;
 
-		public Action<CharacterRecordData> OnLoadData { get; set; }
+		public event Action<CharacterRecordData> OnLoadData;
 
 		public void LoadData(GameObject characterPrefab)
 		{

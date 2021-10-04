@@ -14,11 +14,11 @@ namespace Freedom.Characters.Attributes
 
 		[SerializeField] bool invincible;
 
-		public Action<int> OnChange { get; set; }
+		public event Action<int> OnChange;
 
-		public Action<float> OnChangePercent { get; set; }
+		public event Action<float> OnChangePercent;
 
-		public Action OnOver { get; set; }
+		public event Action OnOver;
 
 		const int MinHealth = 0;
 

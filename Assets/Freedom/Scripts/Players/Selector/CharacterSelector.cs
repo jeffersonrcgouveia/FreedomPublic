@@ -20,11 +20,11 @@ namespace Freedom.Players.Selector
 
 		[field: SerializeField] public LayerMask CharacterLayer { get; set; }
 
-		public Action<GameObject> OnSetCharacterPrefab { get; set; }
+		public event Action<GameObject> OnSetCharacterPrefab;
 
-		public Action<GameObject> OnSetCharacter { get; set; }
+		public event Action<GameObject> OnSetCharacter;
 
-		public Action<GameObject> OnDestroyCharacter { get; set; }
+		public event Action<GameObject> OnDestroyCharacter;
 
 		GameObject _lastCharacterPrefab;
 

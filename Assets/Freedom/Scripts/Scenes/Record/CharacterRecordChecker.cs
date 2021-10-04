@@ -9,11 +9,11 @@ namespace Freedom.Scenes.Record
 	{
 		[SerializeField] PlayerPunctuationScriptableVariable punctuationState;
 
-		public Action<bool, int> OnAchievedWaveRecord { get; set; }
+		public event Action<bool, int> OnAchievedWaveRecord;
 
-		public Action<bool, int> OnAchievedEnemiesKilledRecord { get; set; }
+		public event Action<bool, int> OnAchievedEnemiesKilledRecord;
 
-		public Action OnAchievedAnyRecord { get; set; }
+		public event Action OnAchievedAnyRecord;
 
 		CharacterRecordData _data;
 

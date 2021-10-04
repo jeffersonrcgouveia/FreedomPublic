@@ -7,7 +7,7 @@ namespace Freedom.Players.Inputs.Buttons
 	{
 		[SerializeField] string buttonName;
 
-		public Action OnButtonDown { get; set; }
+		public event Action OnButtonDown;
 
 		void Update()
 		{

@@ -8,11 +8,11 @@ namespace Freedom.Scenes.Game.SpawnManagers.Players.SpawnManager
     {
         [SerializeField] GameObject playerPrefab;
 
-        public Action<GameObject> OnSpawnPlayer { get; set; }
+        public event Action<GameObject> OnSpawnPlayer;
 
-        public Action<GameObject> OnSetCharacterPrefab { get; set; }
+        public event Action<GameObject> OnSetCharacterPrefab;
 
-        public Action<GameObject> OnSpawnCharacter { get; set; }
+        public event Action<GameObject> OnSpawnCharacter;
 
         void Start()
         {

@@ -8,7 +8,7 @@ namespace Freedom.Scenes.Base
 	{
 		[field: SerializeField] public GameObject CharacterPrefab { get; set; }
 
-		public Action<GameObject> OnSetCharacterPrefab { get; set; }
+		public event Action<GameObject> OnSetCharacterPrefab;
 
 		GameObject _lastCharacterPrefab;
 

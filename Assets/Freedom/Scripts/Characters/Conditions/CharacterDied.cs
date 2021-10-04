@@ -21,7 +21,7 @@ namespace Freedom.Characters.Conditions
 
 		[SerializeField] LayerMask uncollidableMask;
 
-		public Action OnDie { get; set; }
+		public event Action OnDie;
 
 		Collider _collider;
 
@@ -44,7 +44,7 @@ namespace Freedom.Characters.Conditions
 			hurt.SetActive(false);
 			characterDirection.CanExecute = false;
 			characterActions.SetCanAct(false);
-			OnDie.Invoke();
+			OnDie?.Invoke();
 		}
 	}
 }

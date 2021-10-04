@@ -9,11 +9,11 @@ namespace Freedom.Characters.Actions.Base
     {
         [SerializeField] List<HitBox> hitBoxes;
 
-        public Action OnEnableHitBoxes { get; set; }
+        public event Action OnEnableHitBoxes;
 
-        public Action OnDisableHitBoxes { get; set; }
+        public event Action OnDisableHitBoxes;
 
-        public Action<GameObject> OnHit { get; set; }
+        public event Action<GameObject> OnHit;
 
         public void InvokeOnEnable() => OnEnableHitBoxes?.Invoke();
 

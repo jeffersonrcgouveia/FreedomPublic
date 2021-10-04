@@ -5,8 +5,8 @@ namespace Freedom.Scenes.Game.SpawnManagers.Players.SpawnManager
 {
     public interface IPlayerSpawnManager
     {
-        public Action<GameObject> OnSpawnPlayer { get; set; }
+        public event Action<GameObject> OnSpawnPlayer;
 
-        public Action<GameObject> OnSpawnCharacter { get; set; }
+        public event Action<GameObject> OnSpawnCharacter;
     }
 }

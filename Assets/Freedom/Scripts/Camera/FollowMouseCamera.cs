@@ -11,7 +11,7 @@ namespace Freedom.Camera
 
 		[SerializeField] float maxDistance = 4;
 
-		public Action<Vector3> OnCalculateMouseDirection { get; set; }
+		public event Action<Vector3> OnCalculateMouseDirection;
 
 		UnityEngine.Camera _camera;
 

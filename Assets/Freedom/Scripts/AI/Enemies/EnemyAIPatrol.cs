@@ -13,7 +13,7 @@ namespace Freedom.AI.Enemies
 
         [field: SerializeField, Space] public UnityEvent<Vector3> OnCreateWalkPoint { get; set; }
 
-        [field: SerializeField] public Action<Vector3> OnCalculateWalkPointDirection { get; set; }
+        public event Action<Vector3> OnCalculateWalkPointDirection;
 
         const float FollowWalkPointDistance = 2f;
 

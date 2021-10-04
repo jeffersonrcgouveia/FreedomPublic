@@ -8,30 +8,30 @@ namespace Freedom.Characters.Actions.Roll
     {
         [field: SerializeField] public float RollingDuration { get; private set; } = 1;
 
-        public Action OnRollingStart { get; set; }
+        public event Action OnRollingStart;
 
-        public Action OnRolling { get; set; }
+        public event Action OnRolling;
 
-        public Action OnRollingEnd { get; set; }
+        public event Action OnRollingEnd;
 
         bool _isRolling;
 
         void Update()
         {
-            if (_isRolling) OnRolling.Invoke();
+            if (_isRolling) OnRolling?.Invoke();
         }
 
         public void Roll()
         {
             _isRolling = true;
-            OnRollingStart.Invoke();
+            OnRollingStart?.Invoke();
             StartCoroutine(RollCoroutine());
         }
 
         IEnumerator RollCoroutine()
         {
             yield return new WaitForSeconds(RollingDuration);
-            OnRollingEnd.Invoke();
+            OnRollingEnd?.Invoke();
             _isRolling = false;
         }
     }
