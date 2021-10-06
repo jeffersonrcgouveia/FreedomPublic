@@ -47,9 +47,11 @@ The game objects in the scene are organized by sections to make it easy to find 
 ![Unity_AEXjvhjOGP](https://user-images.githubusercontent.com/65473098/135773998-07c1bee5-567a-47a2-8fc6-5e82fc734039.png)
 
 ### Organized Animator
-The animator contains organized layers and sub-state machines to avoid spaghetti code.
+The Animator contains organized layers and sub-state machines to avoid spaghetti code.
 
 ![4rgGgQHPnp](https://user-images.githubusercontent.com/65473098/135775151-87c9cc6b-7ba3-48f5-b30a-c740885cc325.gif)
+
+The Base Animator Controller contains the blocking animation that supposes to be just on the Knight's Animator Controller. In a real project, I'd put just the common animations on the Base Animator Controller and use a paid asset to reuse them on each character's Animator Controller.
 
 ### Shareable Projects (Git Submodules)
 The projects that can be shared between other projects are imported as a git submodule and can be found in the folder **"Projects"**.
